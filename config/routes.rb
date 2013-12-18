@@ -1,4 +1,11 @@
 Dealership::Application.routes.draw do
+  get "car/index"
+  get "car/new"
+  get "car/edit"
+  post "car/create"
+  get "car/read"
+  get "car/update"
+  get "car/destroy"
   get "/", :to => "static#home"
   get "/about", :to => "static#about"
   
